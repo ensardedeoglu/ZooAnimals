@@ -1,17 +1,28 @@
-public interface dog {
-    public String getAnimalType();
-    public int getIdTag();
-    public void setIdTag(int anIdTag);
-    public int getMinTemperature();
-    public int getMaxTemperature();
-};
+class Dog implements iAnimal{
+    String AnimalType;
+    int IdTag;
+    int MinTemperature;
+    int MaxTemperature;
 
-public void getAnimalType() {
-      System.out.println("The type of animal is 'Dog'");
-   }
-};
+    Dog(){
+        MinTemperature = 10;
+        MaxTemperature = 25;
+        AnimalType = "Dog";
+    }
 
- public void setIdTag(){
-       int anIdTag = 12;
-    };
-    
+    public String getAnimalType() {
+        return AnimalType;
+    }
+    public int getIdTag() {
+        return IdTag;
+    }
+    public void setIdTag(int anIdTag) {
+        IdTag = anIdTag;
+    }
+    public int getMinTemperature() {
+        return MinTemperature;  
+    }
+    public int getMaxTemperature() {
+        return MaxTemperature;
+    }
+}
